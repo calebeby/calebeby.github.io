@@ -1,7 +1,7 @@
 <header class="navbar{% if page.title != "Home" %}-fixed{% endif %}">
   <nav>
     <div class="nav-wrapper">
-      <a href="/" class="brand-logo center">Nussbaum Furniture</a>
+      <a href="/" class="brand-logo center">{{site.title}}</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi mdi-menu"></i></a>
       <ul class="right hide-on-med-and-down">{% for my_page in site.pages %}{% if my_page.title %}
         <li{% if page.title == my_page.title %} class="active"{% endif %}><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>{% endif %}{% endfor %}
