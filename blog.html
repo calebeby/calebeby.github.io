@@ -3,7 +3,7 @@ layout: default
 title: Blog
 permalink: /blog/
 ---
-<div data-animation="hierarchical-display" class="row container posts">
+<div class="row container">
   {% for post in site.posts %}
 	<a href="{{ post.url }}" title="{{ post.title }}">
 		<div class="col s12 m6 l4 card hoverable waves-effect waves-block waves-light">
@@ -18,8 +18,3 @@ permalink: /blog/
   {% endfor %}
 </div>
 <a href="{{ " /feed.xml " | prepend: site.baseurl }}" class="waves-effect waves-light btn">Subscribe <i class="mdi mdi-rss"></i></a>
-<script type="text/javascript">
-  $( document ).ready(function(){
-
-  });
-</script>
