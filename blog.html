@@ -12,6 +12,8 @@ permalink: /blog/
         <span class="card-title white-text">{{ post.title }}</span>
 			</div>
 			<div class="card-content">
+      {% if post.date %}<div class="chip">{{ post.date | date: "%a, %B %d, %Y" }}</div>{% endif %}
+      {% for tag in post.tags %}<a href="#" class="chip"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
 			</div>
 		</div>
 	</a>
