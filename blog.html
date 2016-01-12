@@ -12,8 +12,12 @@ permalink: /blog/
         <span class="card-title white-text">{{ post.title }}</span>
 			</div>
 			<div class="card-content">
-      {% if post.date %}<div class="chip"><i class="mdi mdi-calendar"></i>{{ post.date | date: "%a, %B %d, %Y" }}</div>{% endif %}
-      {% for tag in post.tags %}<a href="#" class="chip"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
+				{% if post.date %}
+					<time class="chip" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+						{{ page.date | date: "%a, %B %d, %Y" }}
+					</time>
+				{% endif %}
+				{% for tag in post.tags %}<a href="#" class="chip"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
 			</div>
 		</div>
 	</a>
