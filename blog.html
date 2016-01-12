@@ -15,7 +15,7 @@ permalink: /blog/
 				{% if post.date %}
 					<time class="chip" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
 						<i class="mdi mdi-calendar"></i>
-						{{ page.date | date: "%a, %B %d, %Y" }}
+						{{ post.date | date: "%a, %B %d, %Y" }}
 					</time>
 				{% endif %}
 				{% for tag in post.tags %}<a href="#" class="chip"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
