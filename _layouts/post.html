@@ -16,7 +16,7 @@ layout: default #include default header, etc.
 			{% if page.author %}
 				<span class="chip" itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
 			{% else %}
-				<span class="chip">{{ site.author.name }}</span>
+				<i class="mdi mdi-account"></i><span class="chip">{{ site.author.name }}</span>
 			{% endif %}
 		</div>
   </header>
