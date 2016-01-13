@@ -10,3 +10,21 @@
 .blog-post {
   height: 340px;
 }
+del::before {
+  content: "-"
+  color("red", "base");
+}
+del {
+  @extend .red.lighten-3;
+  border-left: 1px solid color("red", "base");
+}
+
+ins::before {
+  content: "+"
+  color("green", "base");
+}
+
+ins {
+  @extend .green.lighten-3;
+  border-left: 1px solid color("green", "base");
+}
