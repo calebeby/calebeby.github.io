@@ -16,7 +16,7 @@ permalink: /blog/
 					<span class="chip small">
 						<i class="mdi mdi-calendar"></i>
 						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
-							{{ post.date | date: "%a, %B %d, %Y" }}
+							{{ post.date | date: "%B %-d, %Y" }}
 						</time>
 					</span>
 				{% endif %}
