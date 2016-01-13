@@ -10,5 +10,6 @@ I recently made a scratch game based on the [Bunnybots competition](http://team1
 [See it on scratch](https://scratch.mit.edu/projects/92587235/)
 
 You can see the real competition below:
-
-<iframe class="responsive-video" src="https://www.youtube.com/embed/dOFGkN2i_SM?rel=0" frameborder="0" allowfullscreen></iframe>
+<div class="video-container">
+  <iframe src="https://www.youtube.com/embed/dOFGkN2i_SM?rel=0" frameborder="0" allowfullscreen></iframe>
+</div>
