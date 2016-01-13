@@ -20,7 +20,7 @@ permalink: /blog/
 						</time>
 					</span>
 				{% endif %}
-				{% for tag in post.tags %}<a href="{{ " /tags/{{ TAG }} " | prepend: site.baseurl }}" class="chip small"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
+				{% for tag in post.tags %}<a href="/tags/{{ TAG }}" class="chip small"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
 			</div>
 		</div>
 	</a>
