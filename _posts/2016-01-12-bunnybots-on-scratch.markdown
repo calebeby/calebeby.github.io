@@ -7,7 +7,7 @@ tags: Bunnybots Scratch team1432
 I recently made a scratch game based on the [Bunnybots competition](http://team1540.org/bunnybots). Here it is:
 
 <div class="video-container">
-  <iframe allowtransparency="true" width="485" height="402" src="//scratch.mit.edu/projects/embed/92587235/?autostart=false" frameborder="0" allowfullscreen></iframe>
+  <iframe allowtransparency="true" src="//scratch.mit.edu/projects/embed/92587235/?autostart=false" frameborder="0" allowfullscreen></iframe>
 </div>
 
 [See it on scratch](https://scratch.mit.edu/projects/92587235/)
