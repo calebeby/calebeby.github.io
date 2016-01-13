@@ -13,7 +13,7 @@ permalink: /blog/
 			</div>
 			<div class="card-content">
 				{% if post.date %}
-					<span class="chip">
+					<span class="chip-small">
 						<i class="mdi mdi-calendar"></i>
 						<time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">
 							{{ post.date | date: "%a, %B %d, %Y" }}
