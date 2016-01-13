@@ -7,8 +7,8 @@
   width: 100%;
   height: 55px;
 }
-.blog-post {
-  height: 340px;
+.blog-post .card-image img {
+  max-height: 340px;
 }
 del::before {
   content: "-"
@@ -16,7 +16,7 @@ del::before {
 }
 del {
   @extend .red.lighten-3;
-  border-left: 1px solid color("red", "base");
+  border-left: 3px solid color("red", "base");
 }
 
 ins::before {
@@ -26,5 +26,5 @@ ins::before {
 
 ins {
   @extend .green.lighten-3;
-  border-left: 1px solid color("green", "base");
+  border-left: 3px solid color("green", "base");
 }
