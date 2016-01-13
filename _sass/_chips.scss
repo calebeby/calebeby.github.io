@@ -8,6 +8,7 @@
   padding: 0 12px;
   border-radius: 16px;
   background-color: $chip-bg-color;
+  margin: inherit 2px;
 
   img {
     float: left;
@@ -32,6 +33,7 @@
     padding-left: 8px;
   }
 }
+
 .chip.small {
   display: inline-block;
   height: 24px;
@@ -42,6 +44,7 @@
   padding: 0 8px;
   border-radius: 12px;
   background-color: $chip-bg-color;
+  margin: inherit 2px;
 
   img {
     float: left;
