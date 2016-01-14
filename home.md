@@ -5,7 +5,8 @@ permalink: /
 ---
 <div class="row container">
 <div class="about hide-on-small-only col m4 card">
-  hello.
+  About me
+  ===
 </div>
 <div class="posts col s12 m8">
   {% for post in site.posts %}
