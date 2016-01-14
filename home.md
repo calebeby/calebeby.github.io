@@ -4,10 +4,10 @@ title: "Home"
 permalink: /
 ---
 <div class="row">
+<div class="about hide-on-small-only col m4 card">
+  hello.
+</div>
   {% for post in site.posts %}
-  <div class="about hide-on-small-only col m4 card">
-    hello.
-  </div>
 	<a href="{{ post.url }}" title="{{ post.title }}">
 		<div class="col s12 m8 card hoverable waves-effect waves-block waves-light blog-post">
 			<div class="card-image">
