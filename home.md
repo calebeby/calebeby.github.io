@@ -3,7 +3,7 @@ layout: default
 title: "Home"
 permalink: /
 ---
-<div class="row">
+<div class="row container">
 <div class="about hide-on-small-only col m4 card">
   hello.
 </div>
