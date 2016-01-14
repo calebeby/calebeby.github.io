@@ -3,10 +3,13 @@ layout: default
 title: "Home"
 permalink: /
 ---
-<div class="row container">
+<div class="row">
   {% for post in site.posts %}
+  <div class="about hide-on-small-only m4 card">
+    hello.
+  </div>
 	<a href="{{ post.url }}" title="{{ post.title }}">
-		<div class="col s12 card hoverable waves-effect waves-block waves-light blog-post">
+		<div class="col s12 m8 card hoverable waves-effect waves-block waves-light blog-post">
 			<div class="card-image">
 				<img class="responsive-img" src="/assets{{ post.url }}cover.jpg">
         <span class="card-title white-text">{{ post.title }}</span>
@@ -26,4 +29,3 @@ permalink: /
 	</a>
   {% endfor %}
 </div>
-<a href="{{ " /feed.xml " | prepend: site.baseurl }}" class="waves-effect waves-light btn">Subscribe <i class="mdi mdi-rss"></i></a>
