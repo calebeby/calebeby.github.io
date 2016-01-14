@@ -7,9 +7,10 @@ permalink: /
 <div class="about hide-on-small-only col m4 card">
   hello.
 </div>
+<div class="posts col s12 m8">
   {% for post in site.posts %}
 	<a href="{{ post.url }}" title="{{ post.title }}">
-		<div class="col s12 m8 card hoverable waves-effect waves-block waves-light blog-post">
+		<div class="card hoverable waves-effect waves-block waves-light blog-post">
 			<div class="card-image">
 				<img class="responsive-img" src="/assets{{ post.url }}cover.jpg">
         <span class="card-title white-text">{{ post.title }}</span>
@@ -28,4 +29,5 @@ permalink: /
 		</div>
 	</a>
   {% endfor %}
+  </div>
 </div>
