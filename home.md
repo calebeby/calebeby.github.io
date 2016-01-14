@@ -5,7 +5,7 @@ permalink: /
 ---
 <div class="row">
   {% for post in site.posts %}
-  <div class="about hide-on-small-only m4 card">
+  <div class="about hide-on-small-only col m4 card">
     hello.
   </div>
 	<a href="{{ post.url }}" title="{{ post.title }}">
