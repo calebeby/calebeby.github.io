@@ -12,7 +12,7 @@
 }
 del::before {
   content: "-";
-  color("red", "base");
+  color: #F44336;
 }
 del {
   @extend .red.lighten-3;
@@ -21,7 +21,7 @@ del {
 
 ins::before {
   content: "+";
-  color("green", "base");
+  color: #4CAF50;
 }
 
 ins {
