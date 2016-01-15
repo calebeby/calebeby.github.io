@@ -11,22 +11,22 @@
   max-height: 340px;
 }
 del::before {
-  content: "-"
+  content: "-";
   color("red", "base");
 }
 del {
   @extend .red.lighten-3;
-  border-left: 3px solid color("red", "base");
+  border-left: 3px solid #C62828;
 }
 
 ins::before {
-  content: "+"
+  content: "+";
   color("green", "base");
 }
 
 ins {
   @extend .green.lighten-3;
-  border-left: 3px solid color("green", "base");
+  border-left: 3px solid #2E7D32;
 }
 
 .social-share {
