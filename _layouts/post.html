@@ -27,8 +27,8 @@ layout: default #include default header, etc.
     {{ content }}
   </div>
 </article>
-<div class="fixed-action-btn social-share-variant">
-    <a class="btn-floating btn-large"><i class="mdi mdi-share"></i></a>
+<div class="fixed-action-btn social-share">
+    <a class="btn-floating btn-large"><i class="mdi mdi-share-variant"></i></a>
     <ul>
 	<li>
 		<a href="http://reddit.com/submit?url={{ page.url | prepend: site.url | cgi_escape }}&title={{ page.title | cgi_escape }}" class="btn-floating reddit" onclick="window.open(this.href, 'mywin',
