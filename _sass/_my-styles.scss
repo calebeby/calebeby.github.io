@@ -16,7 +16,7 @@ del::before {
 }
 del {
   @extend .red.lighten-3;
-  border-left: 3px solid #C62828;
+  border-left: 2px solid #C62828;
 }
 
 ins::before {
@@ -26,7 +26,7 @@ ins::before {
 
 ins {
   @extend .green.lighten-3;
-  border-left: 3px solid #2E7D32;
+  border-left: 2px solid #2E7D32;
 }
 
 .social-share {
