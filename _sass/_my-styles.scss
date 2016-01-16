@@ -51,3 +51,11 @@ ins {
 .reddit {
   background-color: #ff5700;
 }
+
+.profile-card {
+  @extend .card;
+}
+
+.profile-icon {
+  @extend .circle;
+}
