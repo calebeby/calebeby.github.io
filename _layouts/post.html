@@ -9,7 +9,7 @@ layout: default #include default header, etc.
 				<span class="chip">
 					<i class="mdi mdi-calendar"></i>
 					<time datetime="{{ post.date | date_to_xmlschema }}">
-						{{ post.date | date: "%a, %B %d, %Y" }}
+						{{ page.date | date: "%a, %B %d, %Y" }}
 					</time>
 				</span>
 			{% endif %}
@@ -20,7 +20,7 @@ layout: default #include default header, etc.
 			{% else %}
 				<span class="chip"><i class="mdi mdi-account"></i> {{ site.author.name }}</span>
 			{% endif %}
-			{% for tag in post.tags %}<a href="/tags/{{ tag }}" class="chip small"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
+			{% for tag in page.tags %}<a href="/tags/{{ tag }}" class="chip small"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
 		</div>
   </header>
   <div class="post-content" itemprop="articleBody">
