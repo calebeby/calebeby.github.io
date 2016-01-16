@@ -8,7 +8,7 @@ layout: default #include default header, etc.
 			{% if page.date %}
 				<span class="chip">
 					<i class="mdi mdi-calendar"></i>
-					<time datetime="{{ post.date | date_to_xmlschema }}">
+					<time datetime="{{ page.date | date_to_xmlschema }}">
 						{{ page.date | date: "%a, %B %d, %Y" }}
 					</time>
 				</span>
@@ -23,7 +23,7 @@ layout: default #include default header, etc.
 			{% for tag in page.tags %}<a href="/tags/{{ tag }}" class="chip small"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
 		</div>
   </header>
-  <div class="post-content" itemprop="articleBody">
+  <div class="post-content">
     {{ content }}
   </div>
 </article>
