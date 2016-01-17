@@ -10,6 +10,6 @@ tag: team1432
   </div>
   <div class="card-title">Metal Beavers</div>
   <div class="card-content">
-    I am a part of FRC Team 1432, the Metal Beavers. We are a robotics team that is a part of First Robotics Competition. Every year there is a six-week build season, when we build a robot to compete in a unique game against many other teams.
+    I am a part of [FRC Team 1432](http://team1432.org), the Metal Beavers. We are a robotics team that is a part of [First Robotics Competition](http://firstinspires.org). Every year there is a six-week build season, when we build a robot to compete in a unique game against many other teams.
   </div>
 </div>
