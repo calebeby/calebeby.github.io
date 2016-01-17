@@ -52,10 +52,6 @@ ins {
   background-color: #ff5700;
 }
 
-.about {
-  position: fixed;
-}
-
 .card-icon {
   @extend .circle, .center-block, .responsive-img;
   width: 10vw;
