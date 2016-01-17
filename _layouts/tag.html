@@ -7,8 +7,8 @@ permalink: /tags/{{ page.tag }}
 {% capture lookforposts%}site.tags.page.{{ page.tag }}{% endcapture %}
 <div class="posts col s12 m8">
   {{ lookforposts }}
-  {% for post in lookforposts %}
-  {{ page.title }}
+  {% for item in lookforposts %}
+  {{ item.title }}
   hi
 	<a href="{{ post.url }}" title="{{ post.title }}">
 		<div class="card hoverable waves-effect waves-block waves-light blog-post">
