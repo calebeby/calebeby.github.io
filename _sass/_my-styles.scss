@@ -54,9 +54,16 @@ ins {
 
 .profile-card {
   @extend .card;
-}
 
-.profile-icon {
-  @extend .circle, .center-block, .responsive-img;
-  width: 20%;
+  .profile-icon {
+    @extend .circle, .center-block, .responsive-img;
+    width: 10vw;
+    height: 10vw;
+    top:10vh;
+  }
+
+  .background-image {
+    height: 20vw;
+    width:100%;
+  }
 }
