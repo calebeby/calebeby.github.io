@@ -54,8 +54,6 @@ ins {
 
 .card-icon {
   @extend .circle, .center-block, .responsive-img;
-  width: 8vw;
-  height: 8vw;
   border: 2px solid #fff;
   z-index: 3;
 }
@@ -63,9 +61,40 @@ ins {
 .about-card {
   position: relative;
   z-index: -1;
-  margin-top: -4vw!important;
   @extend .card;
-  padding: 4vw 20px 20px
+}
+
+@media #{$small-and-down} {
+  .about-card {
+    margin-top: -10vw!important;
+    padding: 10vw 20px 20px
+  }
+  .card-icon {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+
+@media #{$medium-only} {
+  .about-card {
+    margin-top: -6vw!important;
+    padding: 6vw 20px 20px
+  }
+  .card-icon {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media #{$large-and-up} {
+  .about-card {
+    margin-top: -4vw!important;
+    padding: 4vw 20px 20px
+  }
+  .card-icon {
+    width: 8vw;
+    height: 8vw;
+  }
 }
 
 .profile-card {
