@@ -5,8 +5,15 @@ permalink: /
 ---
 <div class="row container">
 <div class="about hide-on-small-only col m4 card">
-
+  <h2>About me</h2>
 </div>
+<div class="container">
+  {{ content }}
+  <div class="card-panel yellow darken-2">
+    <i class="mdi mdi-alert"></i>The about me section is under development.
+  </div>
+</div>
+
 <div class="posts col s12 m8">
   {% for post in site.posts %}
 	<a href="{{ post.url }}" title="{{ post.title }}">
