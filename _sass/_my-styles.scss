@@ -57,5 +57,6 @@ ins {
 }
 
 .profile-icon {
-  @extend .circle;
+  @extend .circle, .center-block;
+  width: 20%;
 }
