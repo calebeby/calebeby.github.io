@@ -54,23 +54,21 @@ ins {
 
 .profile-card {
   @extend .card;
-
-  .profile-icon {
-    @extend .circle, .center-block, .responsive-img;
-    width: 20vw;
-    height: 20vw;
-    top: -10vw;
-    position: relative;
-    border: 2px solid #fff;
+  .card-images {
+    height: 40vw;
+    .profile-icon {
+      @extend .circle, .center-block, .responsive-img;
+      width: 20vw;
+      height: 20vw;
+      top: -10vw;
+      position: relative;
+      border: 2px solid #fff;
+    }
+    .background-image {
+      height: 20vw;
+      width:100%;
+    }
   }
-
   .card-title {
     @extend .center;
-    top: -10vw;
-
-  }
-  .background-image {
-    height: 20vw;
-    width:100%;
-  }
 }
