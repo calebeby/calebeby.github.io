@@ -6,7 +6,7 @@ permalink: /tags/{{ page.tag }}
   {{ content }}
 
 <div class="posts col s12 m8">
-  {% for post in site.tags.{{ page.tag }} %}
+  {% for post in site.tags.page.tag %}
 	<a href="{{ post.url }}" title="{{ post.title }}">
 		<div class="card hoverable waves-effect waves-block waves-light blog-post">
 			<div class="card-image">
