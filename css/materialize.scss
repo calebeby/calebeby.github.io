@@ -3,8 +3,6 @@
 ---
 @charset "UTF-8";
 
-//my own styles
-@import "my-styles";
 // Mixins
 @import "prefixer";
 @import "mixins";
@@ -14,6 +12,9 @@
 
 // Reset
 @import "normalize";
+
+//my own styles
+@import "my-styles";
 
 // components
 @import "global";/*
