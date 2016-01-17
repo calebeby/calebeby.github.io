@@ -59,11 +59,15 @@ ins {
     @extend .circle, .center-block, .responsive-img;
     width: 20vw;
     height: 20vw;
-    top: -12vh;
-    position: absolute;
+    top: -10vw;
+    position: relative;
     border: 2px solid #fff;
   }
 
+  .card-title {
+    @extend .center;
+
+  }
   .background-image {
     height: 20vw;
     width:100%;
