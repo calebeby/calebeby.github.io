@@ -64,7 +64,7 @@ ins {
 }
 
 .about-card {
-
+  @extend .card;
 }
 
 .profile-card {
