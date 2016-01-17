@@ -4,7 +4,7 @@ permalink: /tags/{{ page.tag }}
 ---
 <div class="container">
   {{ content }}
-{% assign lookforposts = site.tags.page.tag %}
+{% capture lookforposts%}site.tags.page.{{ page.tag }}{% endcapture %}
 <div class="posts col s12 m8">
   {% for post in lookforposts %}
 	<a href="{{ post.url }}" title="{{ post.title }}">
