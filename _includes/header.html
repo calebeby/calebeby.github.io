@@ -4,7 +4,7 @@
       <a href="/" class="brand-logo center">{{site.title}}</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi mdi-menu"></i></a>
       <ul class="right hide-on-med-and-down">{% for my_page in site.pages %}{% if my_page.title %}
-        <li{% if page.title == my_page.title %} class="active"{% endif %}><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>{% endif %}{% endfor %}
+        {% unless visibility == false %}<li{% if page.title == my_page.title %} class="active"{% endif %}><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>{% endunless %}{% endif %}{% endfor %}
       </ul>
       <ul class="side-nav" id="mobile-demo">{% for my_page in site.pages %}{% if my_page.title %}
         {% unless visibility == false %}<li{% if page.title == my_page.title %} class="active"{% endif %}><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>{% endunless %}{% endif %}{% endfor %}
