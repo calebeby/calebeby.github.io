@@ -4,7 +4,7 @@ permalink: /tags/{{ page.tag }}
 ---
 <div class="container">
   {{ content }}
-</div>
+
 <div class="posts col s12 m8">
   {% for post in site.tags.{{ page.tag }} %}
 	<a href="{{ post.url }}" title="{{ post.title }}">
@@ -27,5 +27,5 @@ permalink: /tags/{{ page.tag }}
 		</div>
 	</a>
   {% endfor %}
-  </div>
+</div>
 </div>
