@@ -64,6 +64,10 @@ ins {
   @extend .card;
 }
 
+.about {
+  margin-top: 0.5rem;
+}
+
 @media #{$small-and-down} {
   .about-card {
     margin-top: -10vw!important;
