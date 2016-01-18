@@ -9,8 +9,11 @@
         <h5>Tags</h5>
         <ul>
           {% for tag in site.tags %}
-            <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+            {% assign t = tag | first %}
+            {% assign posts = tag | last %}
+            <li>{{t | downcase | replace:" ","-" }} has {{ posts | size }} posts</li>
           {% endfor %}
+            <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
         </ul>
       </div>
     </div>
