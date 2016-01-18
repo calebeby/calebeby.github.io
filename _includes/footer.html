@@ -11,7 +11,8 @@
           {% for tag in site.tags %}
             {% assign t = tag | first %}
             {% assign posts = tag | last %}
-            <li><a href="/tags/{{ t }}">{{t | downcase | replace:" ","-" }}</a> ({{ posts | size }}{% if posts | size == 1 %}post{% else %}posts{% endif %})</li>
+            {% assign posts-size = posts | size %}
+            <li><a href="/tags/{{ t }}">{{t | downcase | replace:" ","-" }}</a> ({{ posts | size }}{% if posts-size == 1 %}post{% else %}posts{% endif %})</li>
           {% endfor %}
         </ul>
       </div>
