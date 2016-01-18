@@ -127,6 +127,6 @@ h2 {
   font-size: 10px;
 }
 
-a[href~="github.com"] {
+a[href*="github.com"] {
   @extend .mdi, .mdi-github-circle
 }
