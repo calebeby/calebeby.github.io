@@ -9,10 +9,21 @@ tag: {{ page.tag }}
     <i class="mdi mdi-alert"></i> This page is under development.
   </div>
 </div>
-{% assign t = page.tag %}
-{% for post in site.posts %}
-  {% post.tags %}
-  {% if post.tags contains t %}
+
+{% assign t = page.tag | first %}
+{% assign posts = page.tag | last %}
+{{ t | downcase }}
+<ul>
+  {% for post in posts %}
+    {% if post.tags contains t %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="date">{{ post.date | date: "%B %-d, %Y"  }}</span>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
   <a href="{{ post.url }}" title="{{ post.title }}">
 		<div class="card hoverable waves-effect waves-block waves-light blog-post">
 			<div class="card-image">
@@ -32,5 +43,3 @@ tag: {{ page.tag }}
 			</div>
 		</div>
   </a>
-  {% endif %}
-{% endfor %}
