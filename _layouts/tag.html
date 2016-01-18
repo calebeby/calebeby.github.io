@@ -9,9 +9,10 @@ tag: {{ page.tag }}
     <i class="mdi mdi-alert"></i> This page is under development.
   </div>
 </div>
-{% assign tag = page.tag %}
+{% assign t = page.tag %}
 {% for post in site.posts %}
-  {% if post.tags contains tag %}
+  {% post.tags %}
+  {% if post.tags contains t %}
   <a href="{{ post.url }}" title="{{ post.title }}">
 		<div class="card hoverable waves-effect waves-block waves-light blog-post">
 			<div class="card-image">
