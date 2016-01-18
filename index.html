@@ -9,7 +9,8 @@ permalink: /
       <img class="card-icon" src="/assets/about/me.jpg" alt="Caleb Eby" />
       <div class="about-card">
         <div class="card-title center">About Me</div>
-        {% include about.markdown %}
+        {% capture about %}{% include about.markdown %}{% endcapture %}
+        {{ about | markdownify }}
       </div>
       <div class="card-panel yellow darken-2">
         <i class="mdi mdi-alert"></i>The about me section is under development.

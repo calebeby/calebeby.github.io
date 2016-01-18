@@ -2,7 +2,6 @@
 layout: post
 title:  "Welcome to the Site"
 date: 2016-01-07 17:07:56 -0800
-tags: team1432
 ---
 Hi!
 I'm Caleb.
