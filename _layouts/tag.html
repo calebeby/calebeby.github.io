@@ -9,9 +9,11 @@ permalink: /tags/{{ page.tag }}
   </div>
 </div>
 {{ page.tag }}
-{% assign t = page.tag | first %}
-{% assign posts = tag | last %}
-{{ t }}
+{% assign page-tag = page.tag %}
+{{ page-tag }}
+{% for tag in site.tags.page-tag %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
