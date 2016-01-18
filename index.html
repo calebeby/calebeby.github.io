@@ -12,8 +12,8 @@ permalink: /
         {% capture about %}{% include about.markdown %}{% endcapture %}
         {{ about | markdownify }}
       </div>
-      <div class="card collection">
-        <a href="http://github.com/{{ site.accounts.github }}" class="waves-effect waves-dark collection-item">@{{ site.accounts.github }}</a>
+      <div class="button waves-effect">
+        <a href="http://github.com/{{ site.accounts.github }}">@{{ site.accounts.github }}</a>
       </div>
       <div class="card-panel yellow darken-2">
         <i class="mdi mdi-alert"></i>The about me section is under development.
