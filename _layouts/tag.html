@@ -9,11 +9,11 @@ tag: {{ page.tag }}
     <i class="mdi mdi-alert"></i> This page is under development.
   </div>
 </div>
-
+{{ page.tag }}
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
-{{ page.tag }}
+
 {{ t | downcase }}
 <ul>
 {% for post in posts %}
