@@ -4,22 +4,15 @@ title:  "Welcome to the Site"
 date: 2016-01-07 17:07:56 -0800
 tags: team1432
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Hi!
+I'm Caleb.
+I've wanted to make a website for a while, with guides and a blog, and I needed to make a website for my programming class at school, so here it is.
 
-To add new posts, simply <del>add</del><ins>create</ins> a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.<del>ext</del><ins>markdown</ins>` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+I plan on making programming guides occasionally because I think that the internet needs more resources for beginning programmers.
 
-Jekyll also offers powerful support for code snippets:
+This site is built with [Jekyll][jekyll], styled with [Materialize CSS][materializecss], and hosted on [Github Pages][gh-pages]
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[jekyll]:http://jekyllrb.com/
+[materializecss]:http://materializecss.com/
+[gh-pages]:https://github.com/calebeby/calebeby.github.io
