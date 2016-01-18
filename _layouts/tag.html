@@ -4,10 +4,6 @@ permalink: /tags/{{ page.tag }}
 ---
 <div class="container">
   {{ content }}
-  <div class="card-panel yellow darken-2">
-    <i class="mdi mdi-alert"></i> This page is under development.
-  </div>
-
 {% for tag in site.tags %}
   {% assign t = tag | first %}
   {% assign posts = tag | last %}
