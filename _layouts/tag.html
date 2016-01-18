@@ -1,11 +1,12 @@
 ---
 layout: default
 permalink: /tags/{{ page.tag }}
+tag: {{ page.tag }}
 ---
 <div class="container">
   {{ content }}
   <div class="card-panel yellow darken-2">
-    <i class="mdi mdi-alert"></i>This page is under development.
+    <i class="mdi mdi-alert"></i> This page is under development.
   </div>
 </div>
 {% for post in site.posts %}
