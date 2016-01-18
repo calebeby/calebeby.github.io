@@ -1,6 +1,6 @@
 <footer class="page-footer white-text">
   <div class="footer-copyright">
     <div class="container">
-      © {{ site.time | date: "%Y" }} Caleb Eby
+      © {{ site.time | date: "%Y" }} Caleb Eby Site last updated: <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%I:%M %p on %B %-d, %Y" }}</time>
     </div>
 </footer>
