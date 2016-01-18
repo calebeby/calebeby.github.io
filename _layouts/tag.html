@@ -13,6 +13,7 @@ tag: {{ page.tag }}
 {% assign t = page.tag | first %}
 {% assign posts = page.tag | last %}
 {{ t | downcase }}
+{{ t }}
 <ul>
   {% for post in posts %}
     {% if post.tags contains t %}
