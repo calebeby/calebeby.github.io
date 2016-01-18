@@ -13,8 +13,7 @@ permalink: /
         {{ about | markdownify }}
       </div>
       <div class="card collection">
-        <a href="http://github.com/calebeby" class="waves-effect waves-dark collection-item">@calebeby</a>
-        <a href="#!" class="collection-item">@calebeby</a>
+        <a href="http://github.com/{{ site.accounts.github }}" class="waves-effect waves-dark collection-item">@{{ site.accounts.github }}</a>
       </div>
       <div class="card-panel yellow darken-2">
         <i class="mdi mdi-alert"></i>The about me section is under development.
@@ -28,7 +27,7 @@ permalink: /
 		<div class="card hoverable waves-effect waves-block waves-light blog-post">
 			<div class="card-image">
 				<img class="responsive-img" src="/assets{{ post.url }}cover.jpg">
-        <span class="card-title white-text">{{ post.title }}</span>
+        		<span class="card-title white-text">{{ post.title }}</span>
 			</div>
 			<div class="card-content">
 				{% if post.date %}
