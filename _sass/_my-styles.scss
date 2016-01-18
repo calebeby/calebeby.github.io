@@ -126,3 +126,7 @@ ins {
 h2 {
   font-size: 10px;
 }
+
+a[href~="github.com"] {
+  content: "\f36a";
+}
