@@ -128,5 +128,5 @@ h2 {
 }
 
 a[href~="github.com"] {
-  content: "\f36a";
+  @extend .mdi, .mdi-github-circle
 }
