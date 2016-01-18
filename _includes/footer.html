@@ -1,16 +1,5 @@
 <footer class="page-footer white-text">
-  <div class="container">
-    <h2 class="footer-heading">{{ site.title }}</h2>
-    <div class="row">
-      <div class="col s12 m6">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-      <div class="col s12 m6">
-        <p>{{ site.description }}</p>
-      </div>
-    </div>
+  <div class="center-block">
+    Site last updated: <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%I:%M %p on %B %-d, %Y" }}</time>
   </div>
 </footer>
