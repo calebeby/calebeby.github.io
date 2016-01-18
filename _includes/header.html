@@ -1,8 +1,18 @@
 <header class="navbar{% if page.title != "Home" %}-fixed{% endif %}">
   <nav>
-    <div class="nav-wrapper nav">
-      <a href="/"><i class="mdi mdi-home"></i>
-        <span class="center">{{site.title}}</span></a>
+    <div class="nav-wrapper">
+      <ul>
+        <li>
+          <a href="/">
+            <i class="mdi mdi-home"></i>
+          </a>
+        </li>
+        <li>
+          <a href="/">
+            <span class="center">{{site.title}}</span>
+          </a>
+        </li>
+      </ul>
       {% comment %}<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="mdi mdi-menu"></i></a>
       <ul class="right hide-on-med-and-down">{% for my_page in site.pages %}{% if my_page.title %}
         {% unless visibility == false %}<li{% if page.title == my_page.title %} class="active"{% endif %}><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>{% endunless %}{% endif %}{% endfor %}
