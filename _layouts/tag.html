@@ -9,6 +9,7 @@ tag: {{ page.tag }}
     <i class="mdi mdi-alert"></i> This page is under development.
   </div>
 </div>
+{% assign tag = page.tag %}
 {% for post in site.posts %}
   {% if post.tags contains tag %}
   <a href="{{ post.url }}" title="{{ post.title }}">
