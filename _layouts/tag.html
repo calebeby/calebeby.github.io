@@ -11,6 +11,7 @@ permalink: /tags/{{ page.tag }}
 {{ page.tag }}
 {% assign t = page.tag | first %}
 {% assign posts = tag | last %}
+{{ t }}
 <ul>
 {% for post in posts %}
   {% if post.tags contains t %}
