@@ -1,4 +1,20 @@
 <footer class="page-footer white-text">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5>Footer Content</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5>Tags</h5>
+        <ul>
+          {% for tag in site.tags %}
+            <li><a href="/tags/{{ tag }}">{{ tag }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
   <div class="footer-copyright">
     <div class="container">
       © {{ site.time | date: "%Y" }} Caleb Eby Site last updated: <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%I:%M %p on %B %-d, %Y" }}</time>
