@@ -127,6 +127,13 @@ h2 {
   font-size: 10px;
 }
 
-a[href*="github.com"] {
-  @extend .mdi, .mdi-github-circle
+a[href*="github.com"]:before {
+	content: "\f36a";
+	display: inline-block;
+	font: normal normal normal 24px/1 "Material Design Icons";
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	transform: translate(0, 0);
 }
