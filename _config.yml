@@ -20,3 +20,5 @@ permalink: /blog/:title/
 author:
   name: Caleb Eby
   email: caleb.eby01@gmail.com
+accounts:
+  github: calebeby

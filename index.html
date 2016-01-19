@@ -12,7 +12,7 @@ permalink: /
         {% capture about %}{% include about.markdown %}{% endcapture %}
         {{ about | markdownify }}
       </div>
-        <a href="//github.com/calebeby" class="collection-item">@calebeby</a>
+        <a class="btn waves-light waves-effect" href="http://github.com/{{ site.accounts.github }}"></a>
     </div>
   </div>
 
@@ -22,7 +22,7 @@ permalink: /
 		<div class="card hoverable waves-effect waves-block waves-light blog-post">
 			<div class="card-image">
 				<img class="responsive-img" src="/assets{{ post.url }}cover.jpg">
-        <span class="card-title white-text">{{ post.title }}</span>
+        		<span class="card-title white-text">{{ post.title }}</span>
 			</div>
 			<div class="card-content">
 				{% if post.date %}
