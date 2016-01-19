@@ -4,20 +4,20 @@ title: "Home"
 permalink: /
 ---
 <div class="row container">
-  <div class="col s12 m4">
-    <div class="about">
+  <div class="col s12 m4">{% comment %}column{% endcomment %}
+    <div class="about">{% comment %}about{% endcomment %}
       <img class="card-icon" src="/assets/about/me.jpg" alt="Caleb Eby" />
       <div class="about-card">
         <div class="card-title center">Caleb Eby</div>
         {% capture about %}{% include about.markdown %}{% endcapture %}
-        {{ about | markdownify }}
+        {{ about | markdownify }}{% comment %}import content, render markdown{% endcomment %}
       </div>
         <a class="btn waves-light waves-effect" href="http://github.com/{{ site.accounts.github }}"></a>
     </div>
   </div>
 
 <div class="posts col s12 m8">
-  {% for post in site.posts %}
+  {% for post in site.posts %}{% comment %}card for each post{% endcomment %}
 	<a href="{{ post.url }}" title="{{ post.title }}">
 		<div class="card hoverable waves-effect waves-block waves-light blog-post">
 			<div class="card-image">
@@ -34,9 +34,9 @@ permalink: /
 					</span>
 				{% endif %}
 				{% for tag in post.tags %}<a href="/tags/{{ tag }}" class="chip small"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
-			</div>
-		</div>
+			</div>{% comment %}card-content{% endcomment %}
+		</div>{% comment %}card{% endcomment %}
 	</a>
   {% endfor %}
-  </div>
-</div>
+</div>{% comment %}posts{% endcomment %}
+</div>{% comment %}row container{% endcomment %}

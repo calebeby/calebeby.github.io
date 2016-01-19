@@ -1,33 +1,36 @@
 ---
 layout: default #include default header, etc.
 ---
-<article class="post container">
+<article class="post container">{% comment %}post information{% endcomment %}
 	<header class="post-header">
 		<h1 class="post-title">{{ page.title }}</h1>
 		<div class="post-meta">
 			{% if page.date %}
-				<span class="chip">
+				<span class="chip">{% comment %}put date in chip with icon in proper format{% endcomment %}
 					<i class="mdi mdi-calendar"></i>
 					<time datetime="{{ page.date | date_to_xmlschema }}">
 						{{ page.date | date: "%a, %B %d, %Y" }}
 					</time>
 				</span>
 			{% endif %}
-			{% if page.author %}
-				<span class="chip">
-          <i class="mdi mdi-account"></i> {{ page.author }}
+				<span class="chip">{% comment %}chip with author{% endcomment %}
+          <i class="mdi mdi-account"></i>
+					{% if page.author %}
+						{{ page.author }}
+					{% else %}
+						{{ site.author.name }}
+					{% endif %}
         </span>
-			{% else %}
-				<span class="chip"><i class="mdi mdi-account"></i> {{ site.author.name }}</span>
-			{% endif %}
-			{% for tag in page.tags %}<a href="/tags/{{ tag }}" class="chip"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
+			{% for tag in page.tags %}{% comment %}tags{% endcomment %}
+				<a href="/tags/{{ tag }}" class="chip"><i class="mdi mdi-tag"></i>{{ tag }}</a>
+			{% endfor %}
 		</div>
   </header>
   <div class="post-content">
     {{ content }}
   </div>
 </article>
-<div class="share">
+<div class="share">{% comment %}Share{% endcomment %}
 	<div class="fixed-action-btn social-share">
   	<a class="btn-floating btn-large"><i class="mdi mdi-share-variant"></i></a>
     <ul>

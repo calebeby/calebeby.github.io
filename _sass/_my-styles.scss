@@ -34,6 +34,7 @@ ins {
   border-left: 2px solid #2E7D32;
   text-decoration: none;
 }
+
 //share
 .social-share {
   bottom: 15px;
@@ -59,7 +60,7 @@ ins {
 }
 //end share
 
-//make styles for
+//make styles for cards
 .card-icon {
   @extend .circle, .center-block, .responsive-img;
   border: 2px solid #fff;
@@ -76,6 +77,7 @@ ins {
   margin-top: 0.5rem;
 }
 
+//change sizes for image on card
 @media #{$small-and-down} {
   .about-card {
     margin-top: -10vw!important;
@@ -109,6 +111,7 @@ ins {
   }
 }
 
+//style for card
 .profile-card {
   @extend .card;
   .card-images {
@@ -131,10 +134,8 @@ ins {
     @extend .center;
   }
 }
-h2 {
-  font-size: 10px;
-}
 
+//include github icon on links to github
 a[href*="github.com"]:before {
 	content: "\f36a";
 	display: inline-block;
