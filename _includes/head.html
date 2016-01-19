@@ -9,9 +9,11 @@
   <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
   <script src="{{ "/js/jquery.min.js" | prepend: site.baseurl }}"></script>
   <script src="{{ "/js/materialize.min.js" | prepend: site.baseurl }}"></script>
-  <script>
+  {% comment %}
+  <script>this is for the menu button, which no longer exists, so it will go away now:
     $( document ).ready(function(){
       $(".button-collapse").sideNav();
     });
   </script>
+  {% endcomment %}
 </head>
