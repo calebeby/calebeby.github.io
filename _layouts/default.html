@@ -16,8 +16,10 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-72569682-1', 'auto');
   ga('send', 'pageview');
-</script>{% endcapture %}{{ content | strip_newlines | replace: '  ', '' | replace: '	', '' }}
+</script>
 </html>
+{% endcapture %}{{ content | strip_newlines | replace: '  ', '' | replace: '	', '' }}
+
 <!-- Human-readable code at https://github.com/calebeby/calebeby.github.io
   _____      _      _       ______ _           
  / ____|    | |    | |     |  ____| |          
