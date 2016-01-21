@@ -21,39 +21,9 @@
 
 </script>
 </html>
-
-{% comment %}Remove comments{% endcomment %}
-
-  {% assign _comments = "<!-- -->" | split: " " %}
-{% if _comments.size == 2 %}
-  {% capture _comment_befores %}.{{ _content }}{% endcapture %}
-  {% assign _comment_befores = _comment_befores | split: _comments.first %}
-  {% for _comment_before in _comment_befores %}
-    {% if forloop.first %}
-      {% continue %}
-    {% endif %}
-    {% capture _comment_outside %}
-      {% if _carry %}{{ _comments.first }}{% endif %}
-      {{ _comment_before }}
-    {% endcapture %}
-    {% capture _comment %}
-      {% unless _carry %}{{ _comments.first }}{% endunless %}
-      {{ _comment_outside | split: _comments.last | first }}
-      {% if _comment_outside contains _comments.last %}
-        {{ _comments.last }}
-        {% assign _carry = false %}
-      {% else %}
-        {% assign _carry = true %}
-      {% endif %}
-    {% endcapture %}
-    {% assign _content = _content | remove_first: _comment %}
-  {% endfor %}
-  {% if _profile %}
-    {% assign _profile_comments = _content | size | plus: 1 %}
-  {% endif %}
-{% endif %}
-
-{% endcapture %}{{ content | strip_newlines | replace: '  ', '' | replace: '	', '' }}
+{% endcapture %}
+{% comment %}Strip lines, tabs and double spaces{% endcomment %}
+{{ content | strip_newlines | replace: '  ', '' | replace: '	', '' }}
 <!-- Human-readable code at https://github.com/calebeby/calebeby.github.io
   _____      _      _       ______ _           
  / ____|    | |    | |     |  ____| |          
