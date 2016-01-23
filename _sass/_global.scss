@@ -33,7 +33,7 @@ a {
 // Positioning
 .valign-wrapper {
   //@include flexbox();
-  @include align(center);
+  //@include align(center);
 
   .valign {
     display: block;
