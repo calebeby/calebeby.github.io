@@ -1,70 +1,37 @@
 ---
 layout: default #include default header, etc.
 ---
-<article class="post container">{% comment %}post information{% endcomment %}
+{% comment %}post information{% endcomment %}
+<article class="post container" itemscope itemtype="http://schema.org/Article">
 	<header class="post-header">
-		<h1 class="post-title">{{ page.title }}</h1>
+		<h1 class="post-title" itemprop="name">{{ page.title }}</h1>
 		<div class="post-meta">
 			{% if page.date %}
 				<span class="chip">{% comment %}put date in chip with icon in proper format{% endcomment %}
 					<i class="mdi mdi-calendar"></i>
-					<time datetime="{{ page.date | date_to_xmlschema }}">
+					<time itemprop="datePublished" content="{{ page.date | "%F" }}" datetime="{{ page.date | date_to_xmlschema }}">
 						{{ page.date | date: "%a, %B %d, %Y" }}
 					</time>
 				</span>
 			{% endif %}
-				<span class="chip">{% comment %}chip with author{% endcomment %}
-          <i class="mdi mdi-account"></i>
-					{% if page.author %}
-						{{ page.author }}
-					{% else %}
-						{{ site.author.name }}
-					{% endif %}
-        </span>
+				<span itemprop="author" itemscope itemtype="http://schema.org/Person" class="chip">{% comment %}chip with author{% endcomment %}
+						<span itemprop="name">
+							<i class="mdi mdi-account"></i>
+							{% if page.author %}
+								{{ page.author }}
+							{% else %}
+								{{ site.author.name }}
+							{% endif %}
+						</span>
+				</span>
 			{% for tag in page.tags %}{% comment %}tags{% endcomment %}
 				<a href="/tags/{{ tag }}" class="chip"><i class="mdi mdi-tag"></i>{{ tag }}</a>
 			{% endfor %}
 		</div>
   </header>
-  <div class="post-content">
+  <div itemprop="articleBody" class="post-content">
     {{ content }}
   </div>
 </article>
 {% include disqus.html %}
-<div class="share">{% comment %}Share{% endcomment %}
-	<div class="fixed-action-btn social-share">
-  	<a class="btn-floating btn-large"><i class="mdi mdi-share-variant"></i></a>
-    <ul>
-			<li>
-				<a href="http://reddit.com/submit?url={{ page.url | prepend: site.url | cgi_escape }}&title={{ page.title | cgi_escape }}" class="btn-floating reddit" onclick="window.open(this.href, 'mywin',
-'left=20,top=20,width=500,height=500,toolbar=0,resizable=0'); return false;">
-					<i class="mdi mdi-reddit"></i>
-				</a>
-			</li>
-			<li>
-				<a href="http://www.linkedin.com/shareArticle?url={{ page.url | prepend: site.url | cgi_escape }}&title={{ page.title | cgi_escape }}" class="btn-floating linkedin" onclick="window.open(this.href, 'mywin',
-'left=20,top=20,width=500,height=500,toolbar=0,resizable=0'); return false;">
-					<i class="mdi mdi-linkedin"></i>
-				</a>
-			</li>
-			<li>
-				<a href="https://plus.google.com/share?url={{ page.url | prepend: site.url }}index.html" class="btn-floating google-plus" onclick="window.open(this.href, 'mywin',
-'left=20,top=20,width=500,height=500,toolbar=0,resizable=0'); return false;">
-					<i class="mdi mdi-google-plus"></i>
-				</a>
-			</li>
-			<li>
-				<a href="https://twitter.com/share?url={{ page.url | prepend: site.url | cgi_escape }}&text={{ page.title | cgi_escape }}" class="btn-floating twitter" onclick="window.open(this.href, 'mywin',
-'left=20,top=20,width=500,height=500,toolbar=0,resizable=0'); return false;">
-					<i class="mdi mdi-twitter"></i>
-				</a>
-			</li>
-			<li>
-				<a href="http://www.facebook.com/sharer.php?u={{ page.url | prepend: site.url | cgi_escape }}" class="btn-floating facebook" onclick="window.open(this.href, 'mywin',
-'left=20,top=20,width=500,height=500,toolbar=0,resizable=0'); return false;">
-					<i class="mdi mdi-facebook"></i>
-				</a>
-			</li>
-		</ul>
-	</div>
-</div>
+{% include share.html %}
