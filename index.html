@@ -24,7 +24,7 @@ permalink: /
 				<img class="responsive-img" src="/assets{{ post.url }}cover.jpg">
         		<h2 class="white-text">{{ post.title }}</h2>
 			</div>
-			<div class="card-content">
+			<div class="content">
 				{% if post.date %}
 					<span class="chip small">
 						<i class="mdi mdi-calendar"></i>
@@ -34,7 +34,7 @@ permalink: /
 					</span>
 				{% endif %}
 				{% for tag in post.tags %}<a href="/tags/{{ tag }}" class="chip small"><i class="mdi mdi-tag"></i>{{ tag }}</a>{% endfor %}
-			</div>{% comment %}card-content{% endcomment %}
+			</div>{% comment %}content{% endcomment %}
 		</div>{% comment %}card{% endcomment %}
 	</a>
   {% endfor %}
