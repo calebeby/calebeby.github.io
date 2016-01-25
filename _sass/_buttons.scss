@@ -1,3 +1,7 @@
+.btn {
+	@extend button;
+}
+
 // shared styles
 button, button%flat {
   border: none;
