@@ -70,7 +70,7 @@ ins {
 .about-card {
   position: relative;
   z-index: -1;
-  @extend .card;
+  @extend %card;
 }
 
 .about {
@@ -113,7 +113,7 @@ ins {
 
 //style for card
 .profile-card {
-  @extend .card;
+  @extend %card;
   .card-images {
     height: 31.5vw;
     .profile-icon {
