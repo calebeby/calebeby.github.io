@@ -113,26 +113,26 @@ ins {
 
 //style for card
 .profile-card {
-  @extend %card;
-  .card-images {
-    height: 31.5vw;
-    .profile-icon {
-      @extend .circle, .center-block, .responsive-img;
-      width: 20vw;
-      height: 20vw;
-      top: -10vw;
-      position: relative;
-      border: 2px solid #fff;
-    }
-    .background-image {
-      height: 20vw;
-      width:100%;
-      border-radius: 2px 2px 0 0;
-    }
-  }
-  .card-title {
-    @extend .center;
-  }
+	@extend %card;
+	.card-images {
+	height: 31.5vw;
+	.profile-icon {
+		@extend .circle, .center-block, .responsive-img;
+		width: 20vw;
+		height: 20vw;
+		top: -10vw;
+		position: relative;
+		border: 2px solid #fff;
+	}
+	.background-image {
+			height: 20vw;
+			width:100%;
+			border-radius: 2px 2px 0 0;
+		}
+	}
+	.card-title {
+		@extend .center;
+	}
 }
 
 //include github icon on links to github
