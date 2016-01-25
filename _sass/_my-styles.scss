@@ -11,7 +11,9 @@
 
 .blog-post .card-image img {
   max-height: 340px;
+  @extend %card;
 }
+
 //add github-like indicators for add and delete
 del::before {
   content: "-";
