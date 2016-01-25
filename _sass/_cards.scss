@@ -31,15 +31,15 @@
   &%small, &%medium, &%large {
     position: relative;
 
-    .card-image {
+    img {
       max-height: 60%;
       overflow: hidden;
     }
-    .card-content {
+    .content {
       max-height: 40%;
       overflow: hidden;
     }
-    %card-action {
+    %action {
       position: absolute;
       bottom: 0;
       left: 0;
@@ -77,7 +77,7 @@
       width: 100%;
     }
 
-    .card-title {
+    h1, h2, h3, h4 {
       color: $card-bg-color;
       position: absolute;
       bottom: 0;
@@ -96,7 +96,7 @@
       margin: 0;
       color: inherit;
     }
-    .card-title {
+    h1, h2, h3, h4 {
       line-height: 48px;
     }
   }
@@ -126,7 +126,7 @@
     z-index: 1;
     display: none;
 
-    .card-title {
+    h1, h2, h3, h4 {
       cursor: pointer;
       display: block;
     }
