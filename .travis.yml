@@ -8,3 +8,10 @@ script: "bundle exec jekyll build"
 branches:
   only:
     - master
+cache:
+  bundler
+  directories:
+    - /var/lib/gems/2.0.0
+    - /home/caleb/.gem/ruby/2.0.0
+    - /usr/share/rubygems-integration/2.0.0
+    - /usr/share/rubygems-integration/all
