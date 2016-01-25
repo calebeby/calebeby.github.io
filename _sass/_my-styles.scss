@@ -11,7 +11,10 @@
 
 .blog-post .card-image img {
   max-height: 340px;
-  @extend %card;
+}
+
+.blog-post{
+	@extend %card;
 }
 
 //add github-like indicators for add and delete
