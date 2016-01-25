@@ -1,11 +1,9 @@
-
-
 %card-panel {
   transition: box-shadow .25s;
   padding: $card-padding;
   margin: $element-top-margin 0 $element-bottom-margin 0;
   border-radius: 2px;
-  @extend %z-depth-1;
+  @extend .z-depth-1;
   background-color: $card-bg-color;
 }
 
@@ -15,14 +13,14 @@
   background-color: $card-bg-color;
   transition: box-shadow .25s;
   border-radius: 2px;
-  @extend %z-depth-1;
+  @extend .z-depth-1;
 
 
-  %card-title {
+  .card-title {
     font-size: 24px;
     font-weight: 300;
-    &%activator {
-      cursor: pointer;
+	&%activator {
+		cursor: pointer;
     }
   }
 
@@ -30,11 +28,11 @@
   &%small, &%medium, &%large {
     position: relative;
 
-    %card-image {
+    .card-image {
       max-height: 60%;
       overflow: hidden;
     }
-    %card-content {
+    .card-content {
       max-height: 40%;
       overflow: hidden;
     }
@@ -61,7 +59,7 @@
   }
 
 
-  %card-image {
+  .card-image {
     position: relative;
 
     // Image background for content
@@ -76,7 +74,7 @@
       width: 100%;
     }
 
-    %card-title {
+    .card-title {
       color: $card-bg-color;
       position: absolute;
       bottom: 0;
@@ -86,7 +84,7 @@
 
   }
 
-  %card-content {
+  .card-content {
     padding: $card-padding;
     border-radius: 0 0 2px 2px;
 
@@ -95,7 +93,7 @@
       margin: 0;
       color: inherit;
     }
-    %card-title {
+    .card-title {
       line-height: 48px;
     }
   }
@@ -125,7 +123,7 @@
     z-index: 1;
     display: none;
 
-    %card-title {
+    .card-title {
       cursor: pointer;
       display: block;
     }

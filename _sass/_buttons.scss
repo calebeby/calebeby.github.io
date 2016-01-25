@@ -1,5 +1,8 @@
+button {
+	@extend .btn;
+}
 // shared styles
-button, button%flat {
+.btn, .btn-flat {
   border: none;
   border-radius: 2px;
   display: inline-block;
@@ -14,7 +17,7 @@ button, button%flat {
   -webkit-tap-highlight-color: transparent;
 }
 // Disabled shared style
-button:disabled, button%large:disabled, button%floating:disabled {
+.btn:disabled, .btn-large:disabled, .btn-floating:disabled {
   background-color: $button-bg-color-disabled !important;
   box-shadow: none;
   color: $button-color-disabled !important;
@@ -29,7 +32,7 @@ button:disabled, button%large:disabled, button%floating:disabled {
   }
 }
 // Shared icon styles
-button, button%floating, button%large, button%flat {
+.btn, .btn-floating, .btn-large, .btn-flat {
   i {
     font-size: $button-font-size-shared;
     line-height: inherit;
@@ -37,7 +40,7 @@ button, button%floating, button%large, button%flat {
 }
 
 // Raised Button
-button {
+.btn {
   text-decoration:none;
   color: $button-color-raised;
   background-color: $button-color;
@@ -54,7 +57,7 @@ button {
 }
 
 // Floating button
-button%floating {
+.btn-floating {
   display: inline-block;
   color: $button-color-raised;
   position: relative;
@@ -80,13 +83,12 @@ button%floating {
   }
 
   &:hover {
-    background-color: $button-color;
     @extend .z-depth-1-half;
   }
   &:before {
     border-radius: 0;
   }
-  &%large {
+  &.btn-large {
     width: $button-floating-size * 1.5;
     height: $button-floating-size * 1.5;
     i{
@@ -96,12 +98,12 @@ button%floating {
 
 }
 // button fix
-button%floating {
+button.btn-floating {
   border: none;
 }
 
 // Fixed Action Button
-button%fixed-action-btn {
+.fixed-action-btn {
   &.active {
     ul {
      visibility: visible;
@@ -144,14 +146,14 @@ button%fixed-action-btn {
       margin-bottom: 15px;
     }
 
-    a%button-floating {
+    a.btn-floating {
       opacity: 0;
     }
   }
 }
 
 // Flat button
-button%flat {
+.btn-flat {
   box-shadow: none;
   background-color: transparent;
   color: $button-color-flat;
@@ -164,8 +166,8 @@ button%flat {
 }
 
 // Large button
-button%large {
-  @extend button;
+.btn-large {
+  @extend .btn;
   height: $button-height * 1.5;
   line-height: 56px;
 
@@ -175,6 +177,6 @@ button%large {
 }
 
 // Block button
-button%block {
+.btn-block {
   display: block;
 }
