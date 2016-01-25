@@ -32,7 +32,7 @@
       max-height: 60%;
       overflow: hidden;
     }
-    %card-content {
+    .card-content {
       max-height: 40%;
       overflow: hidden;
     }
@@ -84,7 +84,7 @@
 
   }
 
-  %card-content {
+  .card-content {
     padding: $card-padding;
     border-radius: 0 0 2px 2px;
 
