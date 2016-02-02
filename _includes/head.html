@@ -1,6 +1,6 @@
 <head>
   <meta charset="utf-8">
-  {% unless page.url contains "https" %}
+  {% unless page.url contains 'https' %}
   <meta http-equiv="refresh" content="0; url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   {% endunless %}
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
