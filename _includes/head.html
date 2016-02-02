@@ -1,9 +1,9 @@
 <head>
   <meta charset="utf-8">
-  {{ page.url }}
-  {% unless page.url contains 'https' %}
-  <meta http-equiv="refresh" content="0; url={{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  {% endunless %}
+  <script>
+  if (!(window.location.host.startsWith("127.0.0.1")) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+  </script>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
